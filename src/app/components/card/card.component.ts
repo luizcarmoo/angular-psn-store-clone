@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
   @Input()
   gameType:string = ""
   @Input()
-  gamePrice:string = "$119.90"
+  gamePrice:string = ""
 
   constructor() {
 

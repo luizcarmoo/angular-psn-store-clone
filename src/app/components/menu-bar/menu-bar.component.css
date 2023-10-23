@@ -1,12 +1,40 @@
+.sony-logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 40px;
+  background: black;
+}
+
+.sony-logo__container > svg {
+  margin-right: 10px;
+  height: 13px;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+
 .menu-bar__container {
   display: flex;
   flex-direction: row;
-  position: fixed;
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: translateZ(0px);
   z-index: 999;
   background-color: #fff;
   width: 100%;
-  height: 40px;
+  height: 50px;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+  -webkit-transition: height 0.25s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-bar__container.menu-fixo {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu-bar__logo {
@@ -33,12 +61,13 @@
   
   .menu-bar__item > ul > li > a {
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 15px;
     color: black;
     font-family: 'Segoe UI';
+    border-radius: 20px;
+    transition: .9s;
   }
 
   .menu-bar__item > ul > li > a:hover {
-    color: blue;
-    font-weight: 600;
+    background-color: #e1e1e1;
   }
