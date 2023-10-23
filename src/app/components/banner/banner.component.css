@@ -1,7 +1,18 @@
 .banner__container {
   display: flex;
-  width: 100%;
-  height: 400px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  height: 430px;
+  position: relative;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.35);
+}
+
+.banner__img {
+  display: flex;
+  width: 99.8%;
+  height: 300px;
+  margin-left: 1.2px;
   background-color: #ffffff83;
   background: radial-gradient(#CC0507, #4b0202);
   align-items: center;
@@ -18,4 +29,32 @@
   margin-left: 120px;
   height: 300px;
   transition: transform .8s;
+}
+
+.banner-infos {
+  color: #333;
+  width: 100%;
+  margin: 15px 50px;
+  line-height: 50px;
+}
+
+.banner-infos > h1 {
+  font-family: 'Segoe UI';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.banner-infos > h4 {
+  font-family: 'Segoe UI';
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.banner-infos> a > button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #005499;
+  cursor: pointer;
 }

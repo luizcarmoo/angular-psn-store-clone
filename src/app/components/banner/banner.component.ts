@@ -10,7 +10,11 @@ export class BannerComponent implements OnInit {
   @Input()
   bannerImage:string = ""
   @Input()
+  bannerImage2:string = ""
+  @Input()
   bannerTitle:string = ""
+  @Input()
+  bannerDescription:string = ""
 
   constructor() {
     
