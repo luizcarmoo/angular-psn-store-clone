@@ -1,0 +1,78 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  color: white;
+  background: #003697;
+  width: 100%;
+  height: 550px;
+}
+
+.top__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.region__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+}
+
+.region__container > svg {
+  width: 50px;
+  height: 35px;
+}
+
+.links__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.right-list__container > ul {
+  list-style: none;
+  margin: 30px 170px 0 0;
+}
+
+.right-list__container > ul > li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.center-list__container > ul {
+  list-style: none;
+  margin: 30px 170px 0 0;
+}
+
+.center-list__container > ul > li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.left-list__container > ul {
+  list-style: none;
+  margin: 30px 170px 0 0;
+}
+
+.left-list__container > ul > li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.bottom__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Sergoe UI';
+  width: 100%;
+  margin-top: auto;
+}

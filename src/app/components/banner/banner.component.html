@@ -1,21 +1,25 @@
 <div class="banner__container">
   <div class="banner__img">
-    <img 
-    class="banner__img2"
-    [src]=[bannerImage2] 
-    alt="Spiderman 2 Title" 
-    srcset=""
-    > 
-    <img 
-    class="banner__img1"
-    [src]=[bannerImage] 
-    alt="Spiderman 2" 
-    srcset=""
-    >
+    <img
+      class="banner__img2"
+      [src]="[bannerImage2]"
+      alt="Spiderman 2 Title"
+      srcset=""
+    />
+    <img
+      class="banner__img1"
+      [src]="[bannerImage]"
+      alt="Spiderman 2"
+      srcset=""
+    />
   </div>
-  <div class="banner-infos">
-    <h1>{{ bannerTitle}}</h1>
-    <h4>{{ bannerDescription }}</h4>
+  <div class="banner-botom__container">
+    <div class="banner-infos">
+      <div class="teste">
+        <h1>{{ bannerTitle }}</h1>
+        <button class="btn01">Buy Now</button>
+      </div>
+      <h4>{{ bannerDescription }}</h4>
+    </div>
   </div>
-
 </div>

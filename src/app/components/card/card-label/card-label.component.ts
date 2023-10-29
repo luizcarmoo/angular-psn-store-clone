@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardLabelComponent implements OnInit {
 
   @Input()
-  gameLabel:string = ""
+  gameLabel:string = "Available"
 
   constructor() {
 

@@ -1,60 +1,74 @@
 .banner__container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   background-color: white;
-  height: 430px;
+  height: 570px;
   position: relative;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
 }
 
 .banner__img {
   display: flex;
   width: 99.8%;
-  height: 300px;
+  height: 370px;
+  margin-top: 40px;
   margin-left: 1.2px;
   background-color: #ffffff83;
-  background: radial-gradient(#CC0507, #4b0202);
+  background: radial-gradient(circle, #d60408, #630000);
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .banner__img1 {
+  align-items: center;
+  justify-content: center;
   margin-top: 52px;
-  margin-left: 140px;
   width: 400px;
 }
 
 .banner__img2 {
-  margin-left: 120px;
+  align-items: center;
+  justify-content: center;
   height: 300px;
-  transition: transform .8s;
+  transition: transform 0.8s;
 }
 
 .banner-infos {
   color: #333;
-  width: 100%;
   margin: 15px 50px;
   line-height: 50px;
 }
 
-.banner-infos > h1 {
-  font-family: 'Segoe UI';
+.teste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.teste > h1 {
+  font-family: "Segoe UI";
   font-weight: 100;
   font-size: 26px;
 }
 
 .banner-infos > h4 {
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: 100;
   font-size: 16px;
 }
 
-.banner-infos> a > button {
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-weight: bold;
+.teste > .btn01 {
+  font-size: 15px;
+  padding: 2px 10px;
   color: white;
-  background-color: #005499;
+  font-weight: 600;
+  margin-right: 50px;
+  background: #0068bd;
+  border-radius: 20px;
   cursor: pointer;
+}
+
+.teste> .btn01:hover {
+  background: #0058a0;
 }

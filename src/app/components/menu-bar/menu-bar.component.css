@@ -1,8 +1,12 @@
+/* Fonte PSN Store */
+@import url('https://static.playstation.com/font-stack/v1/fonts/SST/SST-Light-latin.3cce6.woff2');
+
+/* Sony bar */
 .sony-logo__container {
   display: flex;
   align-items: center;
   justify-content: right;
-  height: 40px;
+  height: 35px;
   background: black;
 }
 
@@ -15,6 +19,50 @@
   fill: #fff;
 }
 
+/* PS shared navigation bar */
+.shared__container {
+  display: flex;
+  flex-direction: row;
+  z-index: 11;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.shared-nav-ps-logo {
+  width: 30px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-bar__container{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar__container > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'SST', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.nav-bar__container > nav:hover {
+  color: #1d54bb;
+}
+
+
+/* Menu */
 .menu-bar__container {
   display: flex;
   flex-direction: row;
@@ -22,19 +70,20 @@
   left: auto;
   top: auto;
   transform: translateZ(0px);
-  z-index: 999;
+  z-index: 10;
   background-color: #fff;
   width: 100%;
   height: 60px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-  -webkit-transition: height 0.25s ease-out;
-  transition: all 0.3s ease-in-out;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-out;
 }
 
 .menu-bar__container.menu-fixo {
   position: fixed;
+  border: none;
   top: 0;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .menu-bar__logo {
@@ -45,14 +94,14 @@
 
 .menu-bar__item {
   display: flex;
-  margin: auto;
+  margin-left: 150px;
   align-items: center;
 }
 
 .menu-bar__item > ul {
   display: flex;
   list-style-type: none;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 .menu-bar__item > ul > li {
@@ -72,33 +121,4 @@
 
 .menu-bar__item > ul > li > a:hover {
   background-color: #e1e1e1;
-}
-
-.social-btns {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.social-btns > ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.social-btns > ul > li {
-  padding: 5px;
-  margin-right: 15px;
-}
-
-.social-btns > ul > li > a {
-  text-decoration: none;
-  padding: 10px 10px;
-  color: black;
-  border-radius: 50px;
-  transition: 0.9s;
-}
-
-.social-btns > ul > li > a:hover {
-  color: #00d9ff;
 }
